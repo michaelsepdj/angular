@@ -1,0 +1,17 @@
+<h2>Mi lista de Pcs</h2>
+<ul class="pcs">
+    <li *ngFor="let pc of pcs"
+      [class.selected]="pc === selectedPC"
+      (click)="onSelect(pc)">
+      <span class="badge">{{pc.id}}</span> {{pc.name}}
+    </li>
+  </ul>
+ 
+
+  <app-pc-detail [pc]="selectedPC"></app-pc-detail>
+
+
+
+
+
+
