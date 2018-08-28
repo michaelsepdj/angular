@@ -3,9 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
  
 import { AppComponent } from './app.component';
-//import { PcsComponent } from './pcs/pcs.component';
+import { PcsComponent } from './pcs/pcs.component';
 import { PcDetailComponent } from './pc-detail/pc-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
  
 
 
@@ -14,13 +16,15 @@ import { MessagesComponent } from './messages/messages.component';
 @NgModule({
   declarations: [
     AppComponent,
-   // PcsComponent,
+    PcsComponent,
     PcDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,9 @@
+<h3>super lista Pc</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let pc of pcs" class="col-1-4"
+      routerLink="/detail/{{pc.id}}">
+    <div class="module pc">
+      <h4>{{pc.name}}</h4>
+    </div>
+  </a>
+</div>
